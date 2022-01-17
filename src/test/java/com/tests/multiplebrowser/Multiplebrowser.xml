@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Multiple Browser Test1">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="testname" value="Parallel Test"></parameter>
+		<classes>
+			<class name="com.tests.examples.MultiBrowser">
+				<!-- <class name="com.tests.examples.BrowserStack" > -->
+
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+<test name="Multiple Browser Test2" >
+<parameter name="browser" value="firefox"></parameter>
+<parameter name="testname" value="Parallel Test"></parameter>
+<classes>
+<class name="com.tests.examples.MultiBrowser" >
+<!-- <class name="com.tests.examples.BrowserStack" > -->
+
+</class>
+</classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->

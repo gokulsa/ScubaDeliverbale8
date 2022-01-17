@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+<!-- This Test Tag is for Parallel Classes -->
+<test name="Parallel Test Class" >
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="testname" value="Parallel Test Class"></parameter>
+<classes>
+<class name="com.tests.examples.MultiBrowser" />
+<class name="com.tests.examples.ParallelTests" />
+<class name="com.tests.examples.ParallelTests1"/>
+</classes>
+</test>  <!-- Test -->
+
+<!-- This Test Tag is for Parallel methods -->
+
+<test name="Parallel Test Class1" parallel = "methods" thread-count = "2">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="testname" value="Parallel Test Class"></parameter>
+<classes>
+<class name="com.tests.examples.ParallelTests" />
+<class name="com.tests.examples.ParallelTests1"/>
+
+</classes>
+</test> 
+</suite> <!-- Suite -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- This Test Tag is for Parallel Tests -->
+
+	<test name="Parallel Test Class">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="testname" value="Parallel Test Class"></parameter>
+		<classes>
+			<class name="com.tests.examples.ParallelTests" />
+			<class name="com.tests.examples.ParallelTests1" />
+		</classes>
+	</test><!-- Test -->
+</suite> <!-- Suite -->
+
